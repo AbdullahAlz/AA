@@ -1,0 +1,15 @@
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aa-page
+    ports:
+      - "1313:1313"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - ./content:/app/content:ro
+      - ./public:/app/public:ro
+    restart: unless-stopped
