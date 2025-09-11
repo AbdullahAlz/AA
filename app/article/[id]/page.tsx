@@ -21,8 +21,8 @@ export default async function ArticlePage({ params }: PageProps) {
   }
 
   return (
-    <div className="bg-primary min-h-screen flex flex-col">
-      <article className="pt-24 pb-12 px-6 flex-1">
+    <div className="bg-primary">
+      <article className="pt-24 pb-12 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-text-primary mb-4">
             {article.metadata.title}

@@ -19,10 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
       <Header />  
-        {children}
-        <footer className="bg-primary mt-auto">
+        <main className="flex-1 bg-primary">
+          {children}
+        </main>
+        <footer className="bg-primary">
           <p className="text-center text-sm text-text-muted py-4">
             © {strings.copyright}
           </p>

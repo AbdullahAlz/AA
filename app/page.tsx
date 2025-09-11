@@ -7,7 +7,7 @@ export default async function Home() {
   const articles = await getHomepageArticles()
 
   return (
-    <div className="bg-primary min-h-screen flex flex-col">
+    <div className="bg-primary">
       <section className="pt-24 pb-12 px-6" >
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between">
