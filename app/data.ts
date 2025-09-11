@@ -14,7 +14,7 @@ const strings = {
     siteName: "AA",
     greeting: "Hi, I am Abdullah",
     welcomeMessage: "Welcome to totally awesome Webpage!",
-    copyright: `${new Date().getFullYear()} AA - Powered by Next.js`,
+    copyright: `${new Date().getFullYear()} AA`,
 }
 
 export default strings;

@@ -8,7 +8,7 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.location.href = '/'}
-          className="text-2xl font-bold text-text-primary hover:text-text-secondary transition-colors"
+          className="text-2xl font-bold text-text-primary hover:text-accent transition-colors"
         >
           {strings.siteName}
         </button>

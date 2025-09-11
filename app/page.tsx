@@ -2,6 +2,7 @@ import { BlogCard } from '@/components/ContentCard'
 import strings from '@/app/data' 
 import { getHomepageArticles } from '@/app/content'
 import { Github, Linkedin, Book } from 'lucide-react'
+import Image from 'next/image'
 
 export default async function Home() {
   const articles = await getHomepageArticles()
@@ -37,9 +38,14 @@ export default async function Home() {
               </div>
             </div>
               
-            <div className="ml-8">
-              <div className="w-32 h-32 bg-accent rounded-lg"></div>
-            </div>
+                <Image
+                  src="/joker.png"
+                  objectFit="cover"
+                  width={128}
+                  height={128}
+                  alt="Profile Picture"
+                  className="rounded-lg"
+                />
           </div>
         </div>
       </section>
